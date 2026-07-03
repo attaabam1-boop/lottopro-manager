@@ -1,0 +1,13 @@
+I tried to build the APK locally in Codex.
+
+Flutter SDK downloaded and extracted successfully, but Windows Application Control / Device Guard blocked the downloaded Dart executable:
+
+  An Application Control policy has blocked this file.
+
+Because Flutter requires dart.exe to run, this environment cannot compile app-debug.apk locally.
+
+Fallback included:
+  .github/workflows/android-apk.yml
+
+Upload this project to GitHub, open Actions, run "Build Android APK", then download the artifact named:
+  LottoPro-Manager-debug-apk
